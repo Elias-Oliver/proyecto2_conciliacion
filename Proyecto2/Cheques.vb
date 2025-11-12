@@ -1,4 +1,4 @@
-Public Class Cheques
+Partial Public Class Cheques
     Inherits System.Windows.Forms.Form
 
     Public Sub New()
@@ -189,5 +189,7 @@ Public Class Cheques
         End Try
     End Sub
 
+    Private Sub pnlConsultar_Paint(sender As Object, e As PaintEventArgs)
 
+    End Sub
 End Class

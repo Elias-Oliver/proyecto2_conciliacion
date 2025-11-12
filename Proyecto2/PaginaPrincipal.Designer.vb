@@ -43,7 +43,7 @@ Partial Class PaginaPrincipal
         pnlHeader.Location = New Point(0, 80)
         pnlHeader.Name = "pnlHeader"
         pnlHeader.Padding = New Padding(20)
-        pnlHeader.Size = New Size(982, 39)
+        pnlHeader.Size = New Size(1717, 39)
         pnlHeader.TabIndex = 0
         ' 
         ' lblHeaderTitle
@@ -53,7 +53,7 @@ Partial Class PaginaPrincipal
         lblHeaderTitle.ForeColor = Color.White
         lblHeaderTitle.Location = New Point(40, 3)
         lblHeaderTitle.Name = "lblHeaderTitle"
-        lblHeaderTitle.Size = New Size(389, 32)
+        lblHeaderTitle.Size = New Size(478, 41)
         lblHeaderTitle.TabIndex = 0
         lblHeaderTitle.Text = "Sistema de Conciliación Bancaria"
         ' 
@@ -65,7 +65,7 @@ Partial Class PaginaPrincipal
         pnlNav.Location = New Point(0, 0)
         pnlNav.Name = "pnlNav"
         pnlNav.Padding = New Padding(20)
-        pnlNav.Size = New Size(982, 80)
+        pnlNav.Size = New Size(1717, 80)
         pnlNav.TabIndex = 1
         ' 
         ' flpNav
@@ -76,9 +76,9 @@ Partial Class PaginaPrincipal
         flpNav.Controls.Add(btnDepositos)
         flpNav.Controls.Add(btnConciliacion)
         flpNav.Controls.Add(btnSalir)
-        flpNav.Location = New Point(40, 20)
+        flpNav.Location = New Point(33, 17)
         flpNav.Name = "flpNav"
-        flpNav.Size = New Size(630, 40)
+        flpNav.Size = New Size(631, 40)
         flpNav.TabIndex = 0
         flpNav.WrapContents = False
         ' 
@@ -141,20 +141,19 @@ Partial Class PaginaPrincipal
         btnSalir.Location = New Point(470, 0)
         btnSalir.Margin = New Padding(0)
         btnSalir.Name = "btnSalir"
-        btnSalir.Size = New Size(160, 40)
+        btnSalir.Size = New Size(161, 40)
         btnSalir.TabIndex = 3
-        btnSalir.Text = "Salir a inicio de sesion"
+        btnSalir.Text = "Cerrar Sesion"
         btnSalir.UseVisualStyleBackColor = False
         ' 
         ' pnlContent
         ' 
         pnlContent.BackColor = Color.FromArgb(CByte(245), CByte(247), CByte(250))
         pnlContent.Controls.Add(lblWelcome)
-        pnlContent.Dock = DockStyle.Fill
         pnlContent.Location = New Point(0, 0)
         pnlContent.Name = "pnlContent"
         pnlContent.Padding = New Padding(30)
-        pnlContent.Size = New Size(982, 781)
+        pnlContent.Size = New Size(1717, 872)
         pnlContent.TabIndex = 2
         ' 
         ' lblWelcome
@@ -164,20 +163,18 @@ Partial Class PaginaPrincipal
         lblWelcome.ForeColor = Color.FromArgb(CByte(82), CByte(95), CByte(110))
         lblWelcome.Location = New Point(30, 30)
         lblWelcome.Name = "lblWelcome"
-        lblWelcome.Size = New Size(922, 721)
+        lblWelcome.Size = New Size(1657, 812)
         lblWelcome.TabIndex = 0
         lblWelcome.Text = "Bienvenido al Sistema de Conciliación Bancaria" & vbCrLf & "Seleccione una opción del menú superior para comenzar"
         lblWelcome.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' PaginaPrincipal
         ' 
-        AutoValidate = AutoValidate.EnablePreventFocusChange
         BackColor = Color.FromArgb(CByte(245), CByte(247), CByte(250))
-        ClientSize = New Size(982, 781)
+        ClientSize = New Size(1717, 879)
         Controls.Add(pnlHeader)
         Controls.Add(pnlNav)
         Controls.Add(pnlContent)
-        FormBorderStyle = FormBorderStyle.None
         Name = "PaginaPrincipal"
         Text = "Sistema de Conciliación Bancaria"
         pnlHeader.ResumeLayout(False)

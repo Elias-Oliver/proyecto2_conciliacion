@@ -21,6 +21,9 @@ Partial Class Cheques
         pnlMain = New Panel()
         pnlContent = New Panel()
         pnlCardHolder = New Panel()
+        pnlConsultar = New Panel()
+        lblConsultarTitle = New Label()
+        lblConsultarMessage = New Label()
         pnlForm = New Panel()
         pnlTopInner = New FlowLayoutPanel()
         btnTopRegistrar = New Button()
@@ -42,17 +45,14 @@ Partial Class Cheques
         lblNumeroCheque = New Label()
         txtDetalle = New TextBox()
         btnRegistrarBottom = New Button()
-        pnlConsultar = New Panel()
-        lblConsultarTitle = New Label()
-        lblConsultarMessage = New Label()
         dgvCheques = New DataGridView()
         pnlMain.SuspendLayout()
         pnlContent.SuspendLayout()
         pnlCardHolder.SuspendLayout()
+        pnlConsultar.SuspendLayout()
         pnlForm.SuspendLayout()
         pnlTopInner.SuspendLayout()
         tblFields.SuspendLayout()
-        pnlConsultar.SuspendLayout()
         CType(dgvCheques, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
@@ -62,33 +62,69 @@ Partial Class Cheques
         pnlMain.Controls.Add(pnlContent)
         pnlMain.Dock = DockStyle.Fill
         pnlMain.Location = New Point(0, 0)
+        pnlMain.Margin = New Padding(3, 4, 3, 4)
         pnlMain.Name = "pnlMain"
-        pnlMain.Size = New Size(1200, 700)
+        pnlMain.Size = New Size(1699, 745)
         pnlMain.TabIndex = 0
         ' 
         ' pnlContent
         ' 
         pnlContent.BackColor = Color.FromArgb(CByte(247), CByte(247), CByte(249))
         pnlContent.Controls.Add(pnlCardHolder)
-        pnlContent.Controls.Add(pnlConsultar)
         pnlContent.Controls.Add(dgvCheques)
         pnlContent.Dock = DockStyle.Fill
         pnlContent.Location = New Point(0, 0)
+        pnlContent.Margin = New Padding(3, 4, 3, 4)
         pnlContent.Name = "pnlContent"
-        pnlContent.Padding = New Padding(20)
-        pnlContent.Size = New Size(1200, 700)
+        pnlContent.Padding = New Padding(23, 27, 23, 27)
+        pnlContent.Size = New Size(1699, 745)
         pnlContent.TabIndex = 1
         ' 
         ' pnlCardHolder
         ' 
         pnlCardHolder.BackColor = Color.Transparent
+        pnlCardHolder.Controls.Add(pnlConsultar)
         pnlCardHolder.Controls.Add(pnlForm)
-        pnlCardHolder.Dock = DockStyle.Bottom
-        pnlCardHolder.Location = New Point(20, 129)
+        pnlCardHolder.Location = New Point(12, 13)
+        pnlCardHolder.Margin = New Padding(3, 4, 3, 4)
         pnlCardHolder.Name = "pnlCardHolder"
-        pnlCardHolder.Padding = New Padding(20, 40, 20, 20)
-        pnlCardHolder.Size = New Size(1160, 551)
+        pnlCardHolder.Padding = New Padding(23, 53, 23, 27)
+        pnlCardHolder.Size = New Size(1676, 676)
         pnlCardHolder.TabIndex = 0
+        ' 
+        ' pnlConsultar
+        ' 
+        pnlConsultar.BackColor = Color.Transparent
+        pnlConsultar.Controls.Add(lblConsultarTitle)
+        pnlConsultar.Controls.Add(lblConsultarMessage)
+        pnlConsultar.Location = New Point(1298, 14)
+        pnlConsultar.Margin = New Padding(3, 4, 3, 4)
+        pnlConsultar.Name = "pnlConsultar"
+        pnlConsultar.Size = New Size(365, 632)
+        pnlConsultar.TabIndex = 3
+        pnlConsultar.Visible = False
+        ' 
+        ' lblConsultarTitle
+        ' 
+        lblConsultarTitle.AutoSize = True
+        lblConsultarTitle.Font = New Font("Segoe UI", 11F, FontStyle.Bold)
+        lblConsultarTitle.ForeColor = Color.FromArgb(CByte(30), CByte(41), CByte(59))
+        lblConsultarTitle.Location = New Point(23, 27)
+        lblConsultarTitle.Name = "lblConsultarTitle"
+        lblConsultarTitle.Size = New Size(264, 25)
+        lblConsultarTitle.TabIndex = 0
+        lblConsultarTitle.Text = "Listado de Cheques Emitidos"
+        ' 
+        ' lblConsultarMessage
+        ' 
+        lblConsultarMessage.AutoSize = True
+        lblConsultarMessage.Font = New Font("Segoe UI", 9F)
+        lblConsultarMessage.ForeColor = Color.FromArgb(CByte(107), CByte(114), CByte(128))
+        lblConsultarMessage.Location = New Point(46, 67)
+        lblConsultarMessage.Name = "lblConsultarMessage"
+        lblConsultarMessage.Size = New Size(192, 20)
+        lblConsultarMessage.TabIndex = 1
+        lblConsultarMessage.Text = "No hay cheques registrados"
         ' 
         ' pnlForm
         ' 
@@ -97,10 +133,11 @@ Partial Class Cheques
         pnlForm.Controls.Add(lblTitulo)
         pnlForm.Controls.Add(tblFields)
         pnlForm.Controls.Add(btnRegistrarBottom)
-        pnlForm.Location = New Point(20, 77)
+        pnlForm.Location = New Point(19, 14)
+        pnlForm.Margin = New Padding(3, 4, 3, 4)
         pnlForm.Name = "pnlForm"
-        pnlForm.Padding = New Padding(20)
-        pnlForm.Size = New Size(1120, 474)
+        pnlForm.Padding = New Padding(23, 27, 23, 27)
+        pnlForm.Size = New Size(1273, 632)
         pnlForm.TabIndex = 0
         ' 
         ' pnlTopInner
@@ -108,9 +145,10 @@ Partial Class Cheques
         pnlTopInner.AutoSize = True
         pnlTopInner.Controls.Add(btnTopRegistrar)
         pnlTopInner.Controls.Add(btnTopConsultar)
-        pnlTopInner.Location = New Point(20, 23)
+        pnlTopInner.Location = New Point(23, 31)
+        pnlTopInner.Margin = New Padding(3, 4, 3, 4)
         pnlTopInner.Name = "pnlTopInner"
-        pnlTopInner.Size = New Size(338, 43)
+        pnlTopInner.Size = New Size(464, 64)
         pnlTopInner.TabIndex = 0
         pnlTopInner.WrapContents = False
         ' 
@@ -123,10 +161,10 @@ Partial Class Cheques
         btnTopRegistrar.Font = New Font("Segoe UI", 9F)
         btnTopRegistrar.ForeColor = Color.FromArgb(CByte(17), CByte(24), CByte(39))
         btnTopRegistrar.Location = New Point(0, 0)
-        btnTopRegistrar.Margin = New Padding(0, 0, 12, 0)
+        btnTopRegistrar.Margin = New Padding(0, 0, 14, 0)
         btnTopRegistrar.Name = "btnTopRegistrar"
-        btnTopRegistrar.Padding = New Padding(14, 8, 14, 8)
-        btnTopRegistrar.Size = New Size(157, 43)
+        btnTopRegistrar.Padding = New Padding(16, 11, 16, 11)
+        btnTopRegistrar.Size = New Size(215, 64)
         btnTopRegistrar.TabIndex = 0
         btnTopRegistrar.Text = "  +  Registrar Cheque"
         btnTopRegistrar.UseVisualStyleBackColor = False
@@ -139,11 +177,11 @@ Partial Class Cheques
         btnTopConsultar.FlatStyle = FlatStyle.Flat
         btnTopConsultar.Font = New Font("Segoe UI", 9F)
         btnTopConsultar.ForeColor = Color.White
-        btnTopConsultar.Location = New Point(169, 0)
+        btnTopConsultar.Location = New Point(229, 0)
         btnTopConsultar.Margin = New Padding(0)
         btnTopConsultar.Name = "btnTopConsultar"
-        btnTopConsultar.Padding = New Padding(14, 8, 14, 8)
-        btnTopConsultar.Size = New Size(169, 41)
+        btnTopConsultar.Padding = New Padding(16, 11, 16, 11)
+        btnTopConsultar.Size = New Size(235, 61)
         btnTopConsultar.TabIndex = 1
         btnTopConsultar.Text = "  🔍  Consultar Cheques"
         btnTopConsultar.UseVisualStyleBackColor = False
@@ -153,9 +191,9 @@ Partial Class Cheques
         lblTitulo.AutoSize = True
         lblTitulo.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
         lblTitulo.ForeColor = Color.FromArgb(CByte(30), CByte(41), CByte(59))
-        lblTitulo.Location = New Point(19, 81)
+        lblTitulo.Location = New Point(22, 108)
         lblTitulo.Name = "lblTitulo"
-        lblTitulo.Size = New Size(158, 21)
+        lblTitulo.Size = New Size(196, 28)
         lblTitulo.TabIndex = 0
         lblTitulo.Text = "Registro de Cheque"
         ' 
@@ -179,19 +217,20 @@ Partial Class Cheques
         tblFields.Controls.Add(lblFechaCheque, 1, 0)
         tblFields.Controls.Add(lblNumeroCheque, 0, 0)
         tblFields.Controls.Add(txtDetalle, 0, 7)
-        tblFields.Location = New Point(20, 115)
+        tblFields.Location = New Point(23, 153)
+        tblFields.Margin = New Padding(3, 4, 3, 4)
         tblFields.Name = "tblFields"
-        tblFields.Padding = New Padding(0, 10, 0, 10)
+        tblFields.Padding = New Padding(0, 13, 0, 13)
         tblFields.RowCount = 8
-        tblFields.RowStyles.Add(New RowStyle(SizeType.Absolute, 20F))
-        tblFields.RowStyles.Add(New RowStyle(SizeType.Absolute, 41F))
-        tblFields.RowStyles.Add(New RowStyle(SizeType.Absolute, 20F))
-        tblFields.RowStyles.Add(New RowStyle(SizeType.Absolute, 38F))
-        tblFields.RowStyles.Add(New RowStyle(SizeType.Absolute, 20F))
-        tblFields.RowStyles.Add(New RowStyle(SizeType.Absolute, 45F))
-        tblFields.RowStyles.Add(New RowStyle(SizeType.Absolute, 17F))
-        tblFields.RowStyles.Add(New RowStyle(SizeType.Absolute, 122F))
-        tblFields.Size = New Size(1080, 291)
+        tblFields.RowStyles.Add(New RowStyle(SizeType.Absolute, 27F))
+        tblFields.RowStyles.Add(New RowStyle(SizeType.Absolute, 55F))
+        tblFields.RowStyles.Add(New RowStyle(SizeType.Absolute, 27F))
+        tblFields.RowStyles.Add(New RowStyle(SizeType.Absolute, 51F))
+        tblFields.RowStyles.Add(New RowStyle(SizeType.Absolute, 27F))
+        tblFields.RowStyles.Add(New RowStyle(SizeType.Absolute, 60F))
+        tblFields.RowStyles.Add(New RowStyle(SizeType.Absolute, 23F))
+        tblFields.RowStyles.Add(New RowStyle(SizeType.Absolute, 163F))
+        tblFields.Size = New Size(1234, 388)
         tblFields.TabIndex = 1
         ' 
         ' txtNumeroCheque
@@ -199,10 +238,11 @@ Partial Class Cheques
         txtNumeroCheque.BorderStyle = BorderStyle.FixedSingle
         txtNumeroCheque.Dock = DockStyle.Fill
         txtNumeroCheque.Font = New Font("Segoe UI", 10F)
-        txtNumeroCheque.Location = New Point(3, 33)
+        txtNumeroCheque.Location = New Point(3, 44)
+        txtNumeroCheque.Margin = New Padding(3, 4, 3, 4)
         txtNumeroCheque.Name = "txtNumeroCheque"
         txtNumeroCheque.PlaceholderText = "Ej: 001234"
-        txtNumeroCheque.Size = New Size(534, 25)
+        txtNumeroCheque.Size = New Size(611, 30)
         txtNumeroCheque.TabIndex = 0
         ' 
         ' dtpFechaCheque
@@ -211,9 +251,10 @@ Partial Class Cheques
         dtpFechaCheque.Dock = DockStyle.Fill
         dtpFechaCheque.Font = New Font("Segoe UI", 10F)
         dtpFechaCheque.Format = DateTimePickerFormat.Custom
-        dtpFechaCheque.Location = New Point(543, 33)
+        dtpFechaCheque.Location = New Point(620, 44)
+        dtpFechaCheque.Margin = New Padding(3, 4, 3, 4)
         dtpFechaCheque.Name = "dtpFechaCheque"
-        dtpFechaCheque.Size = New Size(534, 25)
+        dtpFechaCheque.Size = New Size(611, 30)
         dtpFechaCheque.TabIndex = 0
         ' 
         ' lblProveedor
@@ -221,9 +262,9 @@ Partial Class Cheques
         lblProveedor.AutoSize = True
         lblProveedor.Font = New Font("Segoe UI", 9F)
         lblProveedor.ForeColor = Color.FromArgb(CByte(75), CByte(85), CByte(99))
-        lblProveedor.Location = New Point(3, 71)
+        lblProveedor.Location = New Point(3, 95)
         lblProveedor.Name = "lblProveedor"
-        lblProveedor.Size = New Size(134, 15)
+        lblProveedor.Size = New Size(170, 20)
         lblProveedor.TabIndex = 0
         lblProveedor.Text = "Beneficiario / Proveedor"
         ' 
@@ -233,9 +274,10 @@ Partial Class Cheques
         cmbProveedor.FlatStyle = FlatStyle.System
         cmbProveedor.Font = New Font("Segoe UI", 10F)
         cmbProveedor.FormattingEnabled = True
-        cmbProveedor.Location = New Point(3, 94)
+        cmbProveedor.Location = New Point(3, 126)
+        cmbProveedor.Margin = New Padding(3, 4, 3, 4)
         cmbProveedor.Name = "cmbProveedor"
-        cmbProveedor.Size = New Size(534, 25)
+        cmbProveedor.Size = New Size(611, 31)
         cmbProveedor.TabIndex = 0
         ' 
         ' lblObjetoGasto
@@ -243,9 +285,9 @@ Partial Class Cheques
         lblObjetoGasto.AutoSize = True
         lblObjetoGasto.Font = New Font("Segoe UI", 9F)
         lblObjetoGasto.ForeColor = Color.FromArgb(CByte(75), CByte(85), CByte(99))
-        lblObjetoGasto.Location = New Point(543, 71)
+        lblObjetoGasto.Location = New Point(620, 95)
         lblObjetoGasto.Name = "lblObjetoGasto"
-        lblObjetoGasto.Size = New Size(92, 15)
+        lblObjetoGasto.Size = New Size(118, 20)
         lblObjetoGasto.TabIndex = 0
         lblObjetoGasto.Text = "Objeto de Gasto"
         ' 
@@ -255,9 +297,10 @@ Partial Class Cheques
         cmbObjetoGasto.FlatStyle = FlatStyle.System
         cmbObjetoGasto.Font = New Font("Segoe UI", 10F)
         cmbObjetoGasto.FormattingEnabled = True
-        cmbObjetoGasto.Location = New Point(543, 94)
+        cmbObjetoGasto.Location = New Point(620, 126)
+        cmbObjetoGasto.Margin = New Padding(3, 4, 3, 4)
         cmbObjetoGasto.Name = "cmbObjetoGasto"
-        cmbObjetoGasto.Size = New Size(534, 25)
+        cmbObjetoGasto.Size = New Size(611, 31)
         cmbObjetoGasto.TabIndex = 0
         ' 
         ' lblMonto
@@ -265,9 +308,9 @@ Partial Class Cheques
         lblMonto.AutoSize = True
         lblMonto.Font = New Font("Segoe UI", 9F)
         lblMonto.ForeColor = Color.FromArgb(CByte(75), CByte(85), CByte(99))
-        lblMonto.Location = New Point(3, 129)
+        lblMonto.Location = New Point(3, 173)
         lblMonto.Name = "lblMonto"
-        lblMonto.Size = New Size(105, 15)
+        lblMonto.Size = New Size(129, 20)
         lblMonto.TabIndex = 0
         lblMonto.Text = "Monto (numérico)"
         ' 
@@ -276,10 +319,11 @@ Partial Class Cheques
         txtMonto.BorderStyle = BorderStyle.FixedSingle
         txtMonto.Dock = DockStyle.Fill
         txtMonto.Font = New Font("Segoe UI", 10F)
-        txtMonto.Location = New Point(3, 152)
+        txtMonto.Location = New Point(3, 204)
+        txtMonto.Margin = New Padding(3, 4, 3, 4)
         txtMonto.Name = "txtMonto"
         txtMonto.PlaceholderText = "0.00"
-        txtMonto.Size = New Size(534, 25)
+        txtMonto.Size = New Size(611, 30)
         txtMonto.TabIndex = 0
         ' 
         ' lblMontoLetras
@@ -287,9 +331,9 @@ Partial Class Cheques
         lblMontoLetras.AutoSize = True
         lblMontoLetras.Font = New Font("Segoe UI", 9F)
         lblMontoLetras.ForeColor = Color.FromArgb(CByte(75), CByte(85), CByte(99))
-        lblMontoLetras.Location = New Point(543, 129)
+        lblMontoLetras.Location = New Point(620, 173)
         lblMontoLetras.Name = "lblMontoLetras"
-        lblMontoLetras.Size = New Size(98, 15)
+        lblMontoLetras.Size = New Size(123, 20)
         lblMontoLetras.TabIndex = 0
         lblMontoLetras.Text = "Monto (en letras)"
         ' 
@@ -298,11 +342,12 @@ Partial Class Cheques
         txtMontoLetras.BorderStyle = BorderStyle.FixedSingle
         txtMontoLetras.Dock = DockStyle.Fill
         txtMontoLetras.Font = New Font("Segoe UI", 10F)
-        txtMontoLetras.Location = New Point(543, 152)
+        txtMontoLetras.Location = New Point(620, 204)
+        txtMontoLetras.Margin = New Padding(3, 4, 3, 4)
         txtMontoLetras.Name = "txtMontoLetras"
         txtMontoLetras.PlaceholderText = "Se genera automáticamente"
         txtMontoLetras.ReadOnly = True
-        txtMontoLetras.Size = New Size(534, 25)
+        txtMontoLetras.Size = New Size(611, 30)
         txtMontoLetras.TabIndex = 0
         ' 
         ' lblDetalle
@@ -310,9 +355,9 @@ Partial Class Cheques
         lblDetalle.AutoSize = True
         lblDetalle.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         lblDetalle.ForeColor = Color.FromArgb(CByte(75), CByte(85), CByte(99))
-        lblDetalle.Location = New Point(3, 194)
+        lblDetalle.Location = New Point(3, 260)
         lblDetalle.Name = "lblDetalle"
-        lblDetalle.Size = New Size(47, 15)
+        lblDetalle.Size = New Size(58, 20)
         lblDetalle.TabIndex = 0
         lblDetalle.Text = "Detalle"
         ' 
@@ -321,9 +366,9 @@ Partial Class Cheques
         lblFechaCheque.AutoSize = True
         lblFechaCheque.Font = New Font("Segoe UI", 9F)
         lblFechaCheque.ForeColor = Color.FromArgb(CByte(75), CByte(85), CByte(99))
-        lblFechaCheque.Location = New Point(543, 10)
+        lblFechaCheque.Location = New Point(620, 13)
         lblFechaCheque.Name = "lblFechaCheque"
-        lblFechaCheque.Size = New Size(101, 15)
+        lblFechaCheque.Size = New Size(126, 20)
         lblFechaCheque.TabIndex = 0
         lblFechaCheque.Text = "Fecha del Cheque"
         ' 
@@ -332,19 +377,20 @@ Partial Class Cheques
         lblNumeroCheque.AutoSize = True
         lblNumeroCheque.Font = New Font("Segoe UI", 9F)
         lblNumeroCheque.ForeColor = Color.FromArgb(CByte(75), CByte(85), CByte(99))
-        lblNumeroCheque.Location = New Point(3, 10)
+        lblNumeroCheque.Location = New Point(3, 13)
         lblNumeroCheque.Name = "lblNumeroCheque"
-        lblNumeroCheque.Size = New Size(111, 15)
+        lblNumeroCheque.Size = New Size(138, 20)
         lblNumeroCheque.TabIndex = 0
         lblNumeroCheque.Text = "Número de Cheque"
         ' 
         ' txtDetalle
         ' 
         tblFields.SetColumnSpan(txtDetalle, 2)
-        txtDetalle.Location = New Point(3, 214)
+        txtDetalle.Location = New Point(3, 287)
+        txtDetalle.Margin = New Padding(3, 4, 3, 4)
         txtDetalle.Multiline = True
         txtDetalle.Name = "txtDetalle"
-        txtDetalle.Size = New Size(1074, 71)
+        txtDetalle.Size = New Size(1227, 93)
         txtDetalle.TabIndex = 1
         ' 
         ' btnRegistrarBottom
@@ -355,81 +401,72 @@ Partial Class Cheques
         btnRegistrarBottom.FlatStyle = FlatStyle.Flat
         btnRegistrarBottom.Font = New Font("Segoe UI", 10F, FontStyle.Bold)
         btnRegistrarBottom.ForeColor = Color.White
-        btnRegistrarBottom.Location = New Point(20, 427)
+        btnRegistrarBottom.Location = New Point(23, 569)
+        btnRegistrarBottom.Margin = New Padding(3, 4, 3, 4)
         btnRegistrarBottom.Name = "btnRegistrarBottom"
-        btnRegistrarBottom.Size = New Size(1080, 44)
+        btnRegistrarBottom.Size = New Size(1234, 59)
         btnRegistrarBottom.TabIndex = 2
         btnRegistrarBottom.Text = "Registrar Cheque"
         btnRegistrarBottom.UseVisualStyleBackColor = False
-        ' 
-        ' pnlConsultar
-        ' 
-        pnlConsultar.BackColor = Color.Transparent
-        pnlConsultar.Controls.Add(lblConsultarTitle)
-        pnlConsultar.Controls.Add(lblConsultarMessage)
-        pnlConsultar.Dock = DockStyle.Fill
-        pnlConsultar.Location = New Point(20, 20)
-        pnlConsultar.Name = "pnlConsultar"
-        pnlConsultar.Size = New Size(1160, 660)
-        pnlConsultar.TabIndex = 1
-        pnlConsultar.Visible = False
-        ' 
-        ' lblConsultarTitle
-        ' 
-        lblConsultarTitle.AutoSize = True
-        lblConsultarTitle.Font = New Font("Segoe UI", 11F, FontStyle.Bold)
-        lblConsultarTitle.ForeColor = Color.FromArgb(CByte(30), CByte(41), CByte(59))
-        lblConsultarTitle.Location = New Point(20, 20)
-        lblConsultarTitle.Name = "lblConsultarTitle"
-        lblConsultarTitle.Size = New Size(209, 20)
-        lblConsultarTitle.TabIndex = 0
-        lblConsultarTitle.Text = "Listado de Cheques Emitidos"
-        ' 
-        ' lblConsultarMessage
-        ' 
-        lblConsultarMessage.AutoSize = True
-        lblConsultarMessage.Font = New Font("Segoe UI", 9F)
-        lblConsultarMessage.ForeColor = Color.FromArgb(CByte(107), CByte(114), CByte(128))
-        lblConsultarMessage.Location = New Point(40, 50)
-        lblConsultarMessage.Name = "lblConsultarMessage"
-        lblConsultarMessage.Size = New Size(153, 15)
-        lblConsultarMessage.TabIndex = 1
-        lblConsultarMessage.Text = "No hay cheques registrados"
         ' 
         ' dgvCheques
         ' 
         dgvCheques.BackgroundColor = Color.White
         dgvCheques.BorderStyle = BorderStyle.None
+        dgvCheques.ColumnHeadersHeight = 29
         dgvCheques.Dock = DockStyle.Fill
-        dgvCheques.Location = New Point(20, 20)
+        dgvCheques.Location = New Point(23, 27)
+        dgvCheques.Margin = New Padding(3, 4, 3, 4)
         dgvCheques.Name = "dgvCheques"
-        dgvCheques.Size = New Size(1160, 660)
+        dgvCheques.RowHeadersWidth = 51
+        dgvCheques.Size = New Size(1653, 691)
         dgvCheques.TabIndex = 1
         dgvCheques.Visible = False
         ' 
         ' Cheques
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.White
-        ClientSize = New Size(1200, 700)
+        ClientSize = New Size(1699, 745)
         Controls.Add(pnlMain)
+        Margin = New Padding(3, 4, 3, 4)
         Name = "Cheques"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Cheques"
         pnlMain.ResumeLayout(False)
         pnlContent.ResumeLayout(False)
         pnlCardHolder.ResumeLayout(False)
+        pnlConsultar.ResumeLayout(False)
+        pnlConsultar.PerformLayout()
         pnlForm.ResumeLayout(False)
         pnlForm.PerformLayout()
         pnlTopInner.ResumeLayout(False)
         pnlTopInner.PerformLayout()
         tblFields.ResumeLayout(False)
         tblFields.PerformLayout()
-        pnlConsultar.ResumeLayout(False)
-        pnlConsultar.PerformLayout()
         CType(dgvCheques, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
+    End Sub
+
+    Private Sub AddFormField(table As TableLayoutPanel, label As Label, control As Control, labelText As String, row As Integer, Optional isSecondColumn As Boolean = False)
+        ' Configure label
+        label.Text = labelText
+        ' Slightly lighter label color and regular weight like the screenshot
+        label.Font = New Font("Segoe UI", 9, FontStyle.Regular)
+        label.ForeColor = Color.FromArgb(75, 85, 99)
+        label.AutoSize = True
+        table.Controls.Add(label, If(isSecondColumn, 1, 0), row)
+
+        ' Configure control
+        control.Font = New Font("Segoe UI", 10)
+        control.Dock = DockStyle.Fill
+        control.Margin = New Padding(0, 5, 20, 0)
+        table.Controls.Add(control, If(isSecondColumn, 1, 0), row + 1)
+
+        If TypeOf control Is TextBox Then
+            DirectCast(control, TextBox).BorderStyle = BorderStyle.FixedSingle
+        End If
     End Sub
 
     Friend WithEvents pnlMain As Panel
@@ -455,9 +492,9 @@ Partial Class Cheques
     Friend WithEvents pnlContent As Panel
     Friend WithEvents pnlCardHolder As Panel
     Friend WithEvents pnlForm As Panel
+    Friend WithEvents tblFields As TableLayoutPanel
+    Friend WithEvents btnRegistrarBottom As Button
     Friend WithEvents pnlConsultar As Panel
     Friend WithEvents lblConsultarTitle As Label
     Friend WithEvents lblConsultarMessage As Label
-    Friend WithEvents tblFields As TableLayoutPanel
-    Friend WithEvents btnRegistrarBottom As Button
 End Class

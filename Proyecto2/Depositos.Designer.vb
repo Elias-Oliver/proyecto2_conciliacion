@@ -5,7 +5,7 @@ Partial Class Depositos
     Private components As System.ComponentModel.IContainer
 
     <System.Diagnostics.DebuggerStepThrough()>
-    Private Sub InitializeComponent(lblTitulo As Label, cmbTipoDeposito As ComboBox, dtpFechaDeposito As DateTimePicker, lblMonto As Label, txtMonto As TextBox, btnRegistrarDeposito As Button, dgvHistorialDepositos As DataGridView)
+    Private Sub InitializeComponent()
         pnlContenedorDeposito = New Panel()
         lblTitulo = New Label()
         lblTipo = New Label()
@@ -34,80 +34,84 @@ Partial Class Depositos
         pnlContenedorDeposito.Controls.Add(btnRegistrarDeposito)
         pnlContenedorDeposito.Controls.Add(dgvHistorialDepositos)
         pnlContenedorDeposito.Cursor = Cursors.No
-        pnlContenedorDeposito.Location = New Point(40, 36)
-        pnlContenedorDeposito.Margin = New Padding(5)
+        pnlContenedorDeposito.Location = New Point(46, 48)
+        pnlContenedorDeposito.Margin = New Padding(6, 7, 6, 7)
         pnlContenedorDeposito.Name = "pnlContenedorDeposito"
-        pnlContenedorDeposito.Size = New Size(720, 452)
+        pnlContenedorDeposito.Size = New Size(823, 603)
         pnlContenedorDeposito.TabIndex = 0
         ' 
         ' lblTitulo
         ' 
         lblTitulo.AutoSize = True
-        lblTitulo.Font = New Font("Segoe UI Semibold", 14.0F, FontStyle.Bold)
-        lblTitulo.Location = New Point(26, 118)
+        lblTitulo.Font = New Font("Segoe UI Semibold", 14F, FontStyle.Bold)
+        lblTitulo.Location = New Point(30, 157)
         lblTitulo.Name = "lblTitulo"
-        lblTitulo.Size = New Size(198, 25)
+        lblTitulo.Size = New Size(251, 32)
         lblTitulo.TabIndex = 0
         lblTitulo.Text = "Registro de Depósitos"
         ' 
         ' lblTipo
         ' 
         lblTipo.AutoSize = True
-        lblTipo.Font = New Font("Segoe UI", 9.0F)
-        lblTipo.Location = New Point(26, 166)
+        lblTipo.Font = New Font("Segoe UI", 9F)
+        lblTipo.Location = New Point(30, 221)
         lblTipo.Name = "lblTipo"
-        lblTipo.Size = New Size(99, 15)
+        lblTipo.Size = New Size(125, 20)
         lblTipo.TabIndex = 1
-        lblTipo.Text = "Tipo de Depósito:"
+        lblTipo.Text = "Tipo de Depósito"
         ' 
         ' cmbTipoDeposito
         ' 
         cmbTipoDeposito.DropDownStyle = ComboBoxStyle.DropDownList
-        cmbTipoDeposito.Location = New Point(160, 158)
+        cmbTipoDeposito.Location = New Point(183, 211)
+        cmbTipoDeposito.Margin = New Padding(3, 4, 3, 4)
         cmbTipoDeposito.Name = "cmbTipoDeposito"
-        cmbTipoDeposito.Size = New Size(200, 23)
+        cmbTipoDeposito.Size = New Size(228, 28)
         cmbTipoDeposito.TabIndex = 2
         ' 
         ' lblFecha
         ' 
         lblFecha.AutoSize = True
-        lblFecha.Location = New Point(385, 161)
+        lblFecha.Location = New Point(462, 216)
         lblFecha.Name = "lblFecha"
-        lblFecha.Size = New Size(41, 15)
+        lblFecha.Size = New Size(47, 20)
         lblFecha.TabIndex = 3
-        lblFecha.Text = "Fecha:"
+        lblFecha.Text = "Fecha"
         ' 
         ' dtpFechaDeposito
         ' 
         dtpFechaDeposito.Format = DateTimePickerFormat.Short
-        dtpFechaDeposito.Location = New Point(451, 158)
+        dtpFechaDeposito.Location = New Point(515, 211)
+        dtpFechaDeposito.Margin = New Padding(3, 4, 3, 4)
         dtpFechaDeposito.Name = "dtpFechaDeposito"
-        dtpFechaDeposito.Size = New Size(200, 23)
+        dtpFechaDeposito.Size = New Size(228, 27)
         dtpFechaDeposito.TabIndex = 4
         ' 
         ' lblMonto
         ' 
         lblMonto.AutoSize = True
-        lblMonto.Location = New Point(26, 215)
+        lblMonto.Location = New Point(64, 286)
         lblMonto.Name = "lblMonto"
-        lblMonto.Size = New Size(46, 15)
+        lblMonto.Size = New Size(53, 20)
         lblMonto.TabIndex = 5
-        lblMonto.Text = "Monto:"
+        lblMonto.Text = "Monto"
         ' 
         ' txtMonto
         ' 
-        txtMonto.Location = New Point(160, 212)
+        txtMonto.Location = New Point(183, 283)
+        txtMonto.Margin = New Padding(3, 4, 3, 4)
         txtMonto.Name = "txtMonto"
-        txtMonto.Size = New Size(200, 23)
+        txtMonto.Size = New Size(228, 27)
         txtMonto.TabIndex = 6
         ' 
         ' btnRegistrarDeposito
         ' 
         btnRegistrarDeposito.BackColor = Color.FromArgb(CByte(17), CByte(24), CByte(39))
         btnRegistrarDeposito.ForeColor = Color.White
-        btnRegistrarDeposito.Location = New Point(451, 205)
+        btnRegistrarDeposito.Location = New Point(515, 273)
+        btnRegistrarDeposito.Margin = New Padding(3, 4, 3, 4)
         btnRegistrarDeposito.Name = "btnRegistrarDeposito"
-        btnRegistrarDeposito.Size = New Size(200, 35)
+        btnRegistrarDeposito.Size = New Size(229, 47)
         btnRegistrarDeposito.TabIndex = 7
         btnRegistrarDeposito.Text = "Registrar Depósito"
         btnRegistrarDeposito.UseVisualStyleBackColor = False
@@ -117,17 +121,21 @@ Partial Class Depositos
         dgvHistorialDepositos.AllowUserToAddRows = False
         dgvHistorialDepositos.AllowUserToOrderColumns = True
         dgvHistorialDepositos.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
-        dgvHistorialDepositos.Location = New Point(25, 257)
+        dgvHistorialDepositos.ColumnHeadersHeight = 29
+        dgvHistorialDepositos.Location = New Point(29, 343)
+        dgvHistorialDepositos.Margin = New Padding(3, 4, 3, 4)
         dgvHistorialDepositos.Name = "dgvHistorialDepositos"
-        dgvHistorialDepositos.Size = New Size(670, 160)
+        dgvHistorialDepositos.RowHeadersWidth = 51
+        dgvHistorialDepositos.Size = New Size(766, 213)
         dgvHistorialDepositos.TabIndex = 8
         ' 
         ' Depositos
         ' 
-        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 500)
+        ClientSize = New Size(914, 667)
         Controls.Add(pnlContenedorDeposito)
+        Margin = New Padding(3, 4, 3, 4)
         Name = "Depositos"
         RightToLeft = RightToLeft.Yes
         Text = "Depositos"
