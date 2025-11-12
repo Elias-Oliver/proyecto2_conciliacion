@@ -5,7 +5,7 @@ Partial Class Depositos
     Private components As System.ComponentModel.IContainer
 
     <System.Diagnostics.DebuggerStepThrough()>
-    Private Sub InitializeComponent()
+    Private Sub InitializeComponent(lblTitulo As Label, cmbTipoDeposito As ComboBox, dtpFechaDeposito As DateTimePicker, lblMonto As Label, txtMonto As TextBox, btnRegistrarDeposito As Button, dgvHistorialDepositos As DataGridView)
         pnlContenedorDeposito = New Panel()
         lblTitulo = New Label()
         lblTipo = New Label()

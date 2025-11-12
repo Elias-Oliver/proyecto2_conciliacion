@@ -1,10 +1,17 @@
 ﻿Public Class Depositos
 
-    Private Sub Depositos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Me.FormBorderStyle = FormBorderStyle.None
-        Me.Dock = DockStyle.Fill
-        Me.BackColor = Color.FromArgb(247, 247, 249)
-        ConfigurarHistorial()
+    Private Sub Deposito_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ' Verifica primero que el DataGridView esté inicializado
+        If dgvHistorialDepositos IsNot Nothing Then
+            If dgvHistorialDepositos.Columns.Count = 0 Then
+                ' Agrega las columnas solo si no existen
+                dgvHistorialDepositos.Columns.Add("NumeroDeposito", "Número de Depósito")
+                dgvHistorialDepositos.Columns.Add("Monto", "Monto")
+                dgvHistorialDepositos.Columns.Add("Fecha", "Fecha")
+            End If
+        Else
+            MessageBox.Show("El DataGridView aún no está disponible (Nothing).", "Depósitos", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+        End If
     End Sub
 
     Private Sub btnRegistrarDeposito_Click(sender As Object, e As EventArgs) Handles btnRegistrarDeposito.Click

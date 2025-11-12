@@ -432,26 +432,6 @@ Partial Class Cheques
         ResumeLayout(False)
     End Sub
 
-    Private Sub AddFormField(table As TableLayoutPanel, label As Label, control As Control, labelText As String, row As Integer, Optional isSecondColumn As Boolean = False)
-        ' Configure label
-        label.Text = labelText
-        ' Slightly lighter label color and regular weight like the screenshot
-        label.Font = New Font("Segoe UI", 9, FontStyle.Regular)
-        label.ForeColor = Color.FromArgb(75, 85, 99)
-        label.AutoSize = True
-        table.Controls.Add(label, If(isSecondColumn, 1, 0), row)
-
-        ' Configure control
-        control.Font = New Font("Segoe UI", 10)
-        control.Dock = DockStyle.Fill
-        control.Margin = New Padding(0, 5, 20, 0)
-        table.Controls.Add(control, If(isSecondColumn, 1, 0), row + 1)
-
-        If TypeOf control Is TextBox Then
-            DirectCast(control, TextBox).BorderStyle = BorderStyle.FixedSingle
-        End If
-    End Sub
-
     Friend WithEvents pnlMain As Panel
     Friend WithEvents txtNumeroCheque As TextBox
     Friend WithEvents dtpFechaCheque As DateTimePicker

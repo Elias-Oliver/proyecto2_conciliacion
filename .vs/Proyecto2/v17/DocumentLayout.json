@@ -1,0 +1,165 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\elias\\source\\repos\\Proyecto2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0C3F5D38-0EF2-4212-974A-29098D1FB662}|Proyecto2\\Proyecto2.vbproj|c:\\users\\elias\\source\\repos\\proyecto2\\proyecto2\\concilacion.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{0C3F5D38-0EF2-4212-974A-29098D1FB662}|Proyecto2\\Proyecto2.vbproj|solutionrelative:proyecto2\\concilacion.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C3F5D38-0EF2-4212-974A-29098D1FB662}|Proyecto2\\Proyecto2.vbproj|c:\\users\\elias\\source\\repos\\proyecto2\\proyecto2\\concilacion.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0C3F5D38-0EF2-4212-974A-29098D1FB662}|Proyecto2\\Proyecto2.vbproj|solutionrelative:proyecto2\\concilacion.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C3F5D38-0EF2-4212-974A-29098D1FB662}|Proyecto2\\Proyecto2.vbproj|c:\\users\\elias\\source\\repos\\proyecto2\\proyecto2\\cheques.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{0C3F5D38-0EF2-4212-974A-29098D1FB662}|Proyecto2\\Proyecto2.vbproj|solutionrelative:proyecto2\\cheques.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C3F5D38-0EF2-4212-974A-29098D1FB662}|Proyecto2\\Proyecto2.vbproj|c:\\users\\elias\\source\\repos\\proyecto2\\proyecto2\\paginaprincipal.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0C3F5D38-0EF2-4212-974A-29098D1FB662}|Proyecto2\\Proyecto2.vbproj|solutionrelative:proyecto2\\paginaprincipal.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C3F5D38-0EF2-4212-974A-29098D1FB662}|Proyecto2\\Proyecto2.vbproj|c:\\users\\elias\\source\\repos\\proyecto2\\proyecto2\\concilacion.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0C3F5D38-0EF2-4212-974A-29098D1FB662}|Proyecto2\\Proyecto2.vbproj|solutionrelative:proyecto2\\concilacion.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C3F5D38-0EF2-4212-974A-29098D1FB662}|Proyecto2\\Proyecto2.vbproj|c:\\users\\elias\\source\\repos\\proyecto2\\proyecto2\\cheques.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0C3F5D38-0EF2-4212-974A-29098D1FB662}|Proyecto2\\Proyecto2.vbproj|solutionrelative:proyecto2\\cheques.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C3F5D38-0EF2-4212-974A-29098D1FB662}|Proyecto2\\Proyecto2.vbproj|c:\\users\\elias\\source\\repos\\proyecto2\\proyecto2\\paginaprincipal.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{0C3F5D38-0EF2-4212-974A-29098D1FB662}|Proyecto2\\Proyecto2.vbproj|solutionrelative:proyecto2\\paginaprincipal.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C3F5D38-0EF2-4212-974A-29098D1FB662}|Proyecto2\\Proyecto2.vbproj|c:\\users\\elias\\source\\repos\\proyecto2\\proyecto2\\cheques.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0C3F5D38-0EF2-4212-974A-29098D1FB662}|Proyecto2\\Proyecto2.vbproj|solutionrelative:proyecto2\\cheques.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Concilacion.vb",
+              "DocumentMoniker": "C:\\Users\\elias\\source\\repos\\Proyecto2\\Proyecto2\\Concilacion.vb",
+              "RelativeDocumentMoniker": "Proyecto2\\Concilacion.vb",
+              "ToolTip": "C:\\Users\\elias\\source\\repos\\Proyecto2\\Proyecto2\\Concilacion.vb",
+              "RelativeToolTip": "Proyecto2\\Concilacion.vb",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAqwHAAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-12T01:55:43.54Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PaginaPrincipal.vb [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\elias\\source\\repos\\Proyecto2\\Proyecto2\\PaginaPrincipal.vb",
+              "RelativeDocumentMoniker": "Proyecto2\\PaginaPrincipal.vb",
+              "ToolTip": "C:\\Users\\elias\\source\\repos\\Proyecto2\\Proyecto2\\PaginaPrincipal.vb [Dise\u00F1o]",
+              "RelativeToolTip": "Proyecto2\\PaginaPrincipal.vb [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-11T22:38:14.237Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Cheques.vb [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\elias\\source\\repos\\Proyecto2\\Proyecto2\\Cheques.vb",
+              "RelativeDocumentMoniker": "Proyecto2\\Cheques.vb",
+              "ToolTip": "C:\\Users\\elias\\source\\repos\\Proyecto2\\Proyecto2\\Cheques.vb [Dise\u00F1o]",
+              "RelativeToolTip": "Proyecto2\\Cheques.vb [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-11T22:32:54.786Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PaginaPrincipal.vb",
+              "DocumentMoniker": "C:\\Users\\elias\\source\\repos\\Proyecto2\\Proyecto2\\PaginaPrincipal.vb",
+              "RelativeDocumentMoniker": "Proyecto2\\PaginaPrincipal.vb",
+              "ToolTip": "C:\\Users\\elias\\source\\repos\\Proyecto2\\Proyecto2\\PaginaPrincipal.vb",
+              "RelativeToolTip": "Proyecto2\\PaginaPrincipal.vb",
+              "ViewState": "AgIAAIAAAAAAAAAAAAAIwIkAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-11T05:27:36.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Concilacion.vb [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\elias\\source\\repos\\Proyecto2\\Proyecto2\\Concilacion.vb",
+              "RelativeDocumentMoniker": "Proyecto2\\Concilacion.vb",
+              "ToolTip": "C:\\Users\\elias\\source\\repos\\Proyecto2\\Proyecto2\\Concilacion.vb [Dise\u00F1o]",
+              "RelativeToolTip": "Proyecto2\\Concilacion.vb [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-11T22:18:07.802Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Concilacion.Designer.vb",
+              "DocumentMoniker": "C:\\Users\\elias\\source\\repos\\Proyecto2\\Proyecto2\\Concilacion.Designer.vb",
+              "RelativeDocumentMoniker": "Proyecto2\\Concilacion.Designer.vb",
+              "ToolTip": "C:\\Users\\elias\\source\\repos\\Proyecto2\\Proyecto2\\Concilacion.Designer.vb",
+              "RelativeToolTip": "Proyecto2\\Concilacion.Designer.vb",
+              "ViewState": "AgIAAEgBAAAAAAAAAAAQwGgBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-11T05:49:39.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Cheques.vb",
+              "DocumentMoniker": "C:\\Users\\elias\\source\\repos\\Proyecto2\\Proyecto2\\Cheques.vb",
+              "RelativeDocumentMoniker": "Proyecto2\\Cheques.vb",
+              "ToolTip": "C:\\Users\\elias\\source\\repos\\Proyecto2\\Proyecto2\\Cheques.vb",
+              "RelativeToolTip": "Proyecto2\\Cheques.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-11T06:36:01.852Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Cheques.Designer.vb",
+              "DocumentMoniker": "C:\\Users\\elias\\source\\repos\\Proyecto2\\Proyecto2\\Cheques.Designer.vb",
+              "RelativeDocumentMoniker": "Proyecto2\\Cheques.Designer.vb",
+              "ToolTip": "C:\\Users\\elias\\source\\repos\\Proyecto2\\Proyecto2\\Cheques.Designer.vb",
+              "RelativeToolTip": "Proyecto2\\Cheques.Designer.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-11T06:35:53.183Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

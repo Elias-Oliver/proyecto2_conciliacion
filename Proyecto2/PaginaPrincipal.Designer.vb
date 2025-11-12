@@ -43,13 +43,13 @@ Partial Class PaginaPrincipal
         pnlHeader.Location = New Point(0, 80)
         pnlHeader.Name = "pnlHeader"
         pnlHeader.Padding = New Padding(20)
-        pnlHeader.Size = New Size(1000, 39)
+        pnlHeader.Size = New Size(982, 39)
         pnlHeader.TabIndex = 0
         ' 
         ' lblHeaderTitle
         ' 
         lblHeaderTitle.AutoSize = True
-        lblHeaderTitle.Font = New Font("Segoe UI", 18.0F, FontStyle.Bold)
+        lblHeaderTitle.Font = New Font("Segoe UI", 18F, FontStyle.Bold)
         lblHeaderTitle.ForeColor = Color.White
         lblHeaderTitle.Location = New Point(40, 3)
         lblHeaderTitle.Name = "lblHeaderTitle"
@@ -65,7 +65,7 @@ Partial Class PaginaPrincipal
         pnlNav.Location = New Point(0, 0)
         pnlNav.Name = "pnlNav"
         pnlNav.Padding = New Padding(20)
-        pnlNav.Size = New Size(1000, 80)
+        pnlNav.Size = New Size(982, 80)
         pnlNav.TabIndex = 1
         ' 
         ' flpNav
@@ -88,7 +88,7 @@ Partial Class PaginaPrincipal
         btnCheques.Cursor = Cursors.Hand
         btnCheques.FlatAppearance.BorderSize = 0
         btnCheques.FlatStyle = FlatStyle.Flat
-        btnCheques.Font = New Font("Segoe UI", 9.0F)
+        btnCheques.Font = New Font("Segoe UI", 9F)
         btnCheques.ForeColor = Color.White
         btnCheques.Location = New Point(0, 0)
         btnCheques.Margin = New Padding(0, 0, 10, 0)
@@ -104,7 +104,7 @@ Partial Class PaginaPrincipal
         btnDepositos.Cursor = Cursors.Hand
         btnDepositos.FlatAppearance.BorderSize = 0
         btnDepositos.FlatStyle = FlatStyle.Flat
-        btnDepositos.Font = New Font("Segoe UI", 9.0F)
+        btnDepositos.Font = New Font("Segoe UI", 9F)
         btnDepositos.ForeColor = Color.White
         btnDepositos.Location = New Point(150, 0)
         btnDepositos.Margin = New Padding(0, 0, 10, 0)
@@ -120,7 +120,7 @@ Partial Class PaginaPrincipal
         btnConciliacion.Cursor = Cursors.Hand
         btnConciliacion.FlatAppearance.BorderSize = 0
         btnConciliacion.FlatStyle = FlatStyle.Flat
-        btnConciliacion.Font = New Font("Segoe UI", 9.0F)
+        btnConciliacion.Font = New Font("Segoe UI", 9F)
         btnConciliacion.ForeColor = Color.White
         btnConciliacion.Location = New Point(300, 0)
         btnConciliacion.Margin = New Padding(0, 0, 10, 0)
@@ -136,7 +136,7 @@ Partial Class PaginaPrincipal
         btnSalir.Cursor = Cursors.Hand
         btnSalir.FlatAppearance.BorderSize = 0
         btnSalir.FlatStyle = FlatStyle.Flat
-        btnSalir.Font = New Font("Segoe UI", 9.0F)
+        btnSalir.Font = New Font("Segoe UI", 9F)
         btnSalir.ForeColor = Color.White
         btnSalir.Location = New Point(470, 0)
         btnSalir.Margin = New Padding(0)
@@ -154,25 +154,26 @@ Partial Class PaginaPrincipal
         pnlContent.Location = New Point(0, 0)
         pnlContent.Name = "pnlContent"
         pnlContent.Padding = New Padding(30)
-        pnlContent.Size = New Size(1000, 700)
+        pnlContent.Size = New Size(982, 781)
         pnlContent.TabIndex = 2
         ' 
         ' lblWelcome
         ' 
         lblWelcome.Dock = DockStyle.Fill
-        lblWelcome.Font = New Font("Segoe UI", 16.0F, FontStyle.Bold)
+        lblWelcome.Font = New Font("Segoe UI", 16F, FontStyle.Bold)
         lblWelcome.ForeColor = Color.FromArgb(CByte(82), CByte(95), CByte(110))
         lblWelcome.Location = New Point(30, 30)
         lblWelcome.Name = "lblWelcome"
-        lblWelcome.Size = New Size(940, 640)
+        lblWelcome.Size = New Size(922, 721)
         lblWelcome.TabIndex = 0
         lblWelcome.Text = "Bienvenido al Sistema de Conciliación Bancaria" & vbCrLf & "Seleccione una opción del menú superior para comenzar"
         lblWelcome.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' PaginaPrincipal
         ' 
+        AutoValidate = AutoValidate.EnablePreventFocusChange
         BackColor = Color.FromArgb(CByte(245), CByte(247), CByte(250))
-        ClientSize = New Size(1000, 700)
+        ClientSize = New Size(982, 781)
         Controls.Add(pnlHeader)
         Controls.Add(pnlNav)
         Controls.Add(pnlContent)
